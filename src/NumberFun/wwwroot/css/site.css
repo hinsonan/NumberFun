@@ -21,9 +21,19 @@
       border:1px solid #1565c0;
       background-color: #1565c0;
       border-radius: 5px;
+      
   }
 
   .enternum{
       margin-top: 5%;
   }
+  a{
+      display:block;
+      color:white;
       
+  }
+  .property, i{
+      font-size: 30px;
+      line-height: 2em;
+  }
+     
