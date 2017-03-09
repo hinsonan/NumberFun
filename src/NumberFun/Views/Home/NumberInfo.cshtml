@@ -1,4 +1,6 @@
-﻿@*
+﻿@model int
+
+@*
     
     
 *@
@@ -6,15 +8,18 @@
     ViewData["Title"] = "NumberInfo";
 }
 
-<h2 class="center">UserNumber</h2>
+<h2 class="center">@Model</h2>
 
 <div class="row">
-    <div class="col-sm-12">
-        <p>Prime</p>
-        <p>Perfect</p>
-        <p>Squareful</p>
-        <p>Squarefull</p>
-        <p>Palindrome</p>
-        <button class="waves-effect waves-light btn ">@Html.ActionLink("Enter New Number", "Index", "Home")</button>
+    <div class="col-sm-12 box">
+        <h3 class="center">Properties Of This Number</h3>
+        <div class="box">
+            <p class="center">Prime</p>
+            <p class="center">Perfect</p>
+            <p class="center">Squareful</p>
+            <p class="center">Squarefull</p>
+            <p class="center">Palindrome</p>
+        </div>
+        <a href="/" class="waves-effect waves-light btn" id="back">Enter New Number</a>
     </div>
 </div>

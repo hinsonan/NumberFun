@@ -5,7 +5,9 @@
 
    <h1>Enter A Number</h1>
     <div class="input-field col s6">
-        <input id="userNumber" type="text" class="validate">
-        <label for="userNumber">Number</label>
-        <button class="waves-effect waves-light btn ">@Html.ActionLink("Analyze", "NumberInfo", "Home")</button>
+        <form asp-action="NumberInfo">
+        <input id="number" name="number" type="text" class="validate">
+        <label for="number">Please Input a Number</label>
+        <button class="waves-effect waves-light btn ">Analyze</button>
+        </form>
     </div>

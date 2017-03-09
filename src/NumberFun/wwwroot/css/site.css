@@ -8,5 +8,19 @@
     flex: 1 0 auto;
   }
 
-  
+  button {
+      color:white;
+  }
+
+  p {
+      font-size: 18px;
+  }
+
+  #back {
+      margin-left:50%;      
+  }
+
+  .box {
+      border:1px solid #1565c0;
+  }
       

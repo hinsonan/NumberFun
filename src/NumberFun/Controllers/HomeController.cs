@@ -13,9 +13,18 @@ namespace NumberFun.Controllers
             return View();
         }
 
-        public IActionResult NumberInfo()
+        public IActionResult NumberInfo(string number)
         {
-            return View();
+            int n;
+            if( int.TryParse(number, out n))
+            {
+                return View(n);
+            }
+            else
+            {
+                return Error();
+            }
+            
         }
 
         public IActionResult About()
