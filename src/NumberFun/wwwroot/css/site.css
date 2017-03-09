@@ -14,11 +14,16 @@
 
   p {
       font-size: 18px;
-  }
-
-  
+      color: white;
+  }  
 
   .descriptionbox {
       border:1px solid #1565c0;
+      background-color: #1565c0;
+      border-radius: 5px;
+  }
+
+  .enternum{
+      margin-top: 5%;
   }
       
