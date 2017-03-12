@@ -31,9 +31,35 @@
             {
                 <a href="https://en.wikipedia.org/wiki/Perfect_number" target="_blank" class="center property"><i class="material-icons">close</i>Perfect</a>
             }
-            <a href="http://mathworld.wolfram.com/Squareful.html" target="_blank" class="center property"><i class="material-icons">done</i><i class="material-icons">close</i>Squareful</a>
-            <a href="https://en.wikipedia.org/wiki/Powerful_number" target="_blank" class="center property"><i class="material-icons">done</i><i class="material-icons">close</i>Squarefull</a>
-            <a href="https://en.wikipedia.org/wiki/Palindromic_number" target="_blank" class="center property"><i class="material-icons">done</i><i class="material-icons">close</i>Palindrome</a>
+            
+            @if (Model.isSquareful() == true)
+            {
+                <a href="http://mathworld.wolfram.com/Squareful.html" target="_blank" class="center property"><i class="material-icons">done</i>Squareful</a>
+
+
+            }
+            else
+            {
+                <a href="http://mathworld.wolfram.com/Squareful.html" target="_blank" class="center property"><i class="material-icons">close</i>Squareful</a>
+
+
+            }
+            @if (Model.isPowerful() == true)
+            {
+                <a href="https://en.wikipedia.org/wiki/Powerful_number" target="_blank" class="center property"><i class="material-icons">done</i>Squarefull</a>
+
+            }
+            else
+            {
+                <a href="https://en.wikipedia.org/wiki/Powerful_number" target="_blank" class="center property"><i class="material-icons">close</i>Squarefull</a>
+            }
+            @if (Model.isPalindrome() == true)
+            {
+                <a href="https://en.wikipedia.org/wiki/Palindromic_number" target="_blank" class="center property"><i class="material-icons">done</i>Palindrome</a>            }
+            else
+            {
+                <a href="https://en.wikipedia.org/wiki/Palindromic_number" target="_blank" class="center property"><i class="material-icons">close</i>Palindrome</a>
+            }
         </div>
         <a href="/" class="waves-effect waves-light btn enternum  blue darken-1" id="back">Enter New Number</a>
     </div>
