@@ -15,8 +15,22 @@
     <div class="col-sm-12 box">
         <h3 class="center">Properties Of This Number</h3>
         <div class="descriptionbox">
-            <a href="https://en.wikipedia.org/wiki/Prime_number" target="_blank" class="center property"><i class="material-icons">done</i><i class="material-icons">close</i>Prime</a>
-            <a href="https://en.wikipedia.org/wiki/Perfect_number" target="_blank" class="center property"><i class="material-icons">done</i><i class="material-icons">close</i>Perfect</a>
+            @if (Model.isPrime() == true)
+            {
+                <a href="https://en.wikipedia.org/wiki/Prime_number" target="_blank" class="center property"><i class="material-icons">done</i>Prime</a>
+            }
+            else{ 
+            <a href="https://en.wikipedia.org/wiki/Prime_number" target="_blank" class="center property"><i class="material-icons">close</i>Prime</a>
+
+            }
+
+            @if (Model.isPerfect() == true)
+            {
+                <a href="https://en.wikipedia.org/wiki/Perfect_number" target="_blank" class="center property"><i class="material-icons">done</i>Perfect</a>            }
+            else
+            {
+                <a href="https://en.wikipedia.org/wiki/Perfect_number" target="_blank" class="center property"><i class="material-icons">close</i>Perfect</a>
+            }
             <a href="http://mathworld.wolfram.com/Squareful.html" target="_blank" class="center property"><i class="material-icons">done</i><i class="material-icons">close</i>Squareful</a>
             <a href="https://en.wikipedia.org/wiki/Powerful_number" target="_blank" class="center property"><i class="material-icons">done</i><i class="material-icons">close</i>Squarefull</a>
             <a href="https://en.wikipedia.org/wiki/Palindromic_number" target="_blank" class="center property"><i class="material-icons">done</i><i class="material-icons">close</i>Palindrome</a>
