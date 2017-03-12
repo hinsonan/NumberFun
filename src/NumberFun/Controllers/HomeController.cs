@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using NumberFun.Models;
 
 namespace NumberFun.Controllers
 {
@@ -15,10 +16,12 @@ namespace NumberFun.Controllers
 
         public IActionResult NumberInfo(string number)
         {
-            int n;
-            if( int.TryParse(number, out n))
+            int num;
+            if( int.TryParse(number, out num))
             {
-                return View(n);
+                NumberProperties numberProp = new NumberProperties(num);
+                
+                return View(numberProp);
             }
             else
             {
