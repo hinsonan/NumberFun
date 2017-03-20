@@ -35,5 +35,6 @@
   .property, i{
       font-size: 30px;
       line-height: 2em;
+      display:none;
   }
      
